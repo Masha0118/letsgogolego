@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>베놈 맥 로봇 대 마일스 모랄레스</title>
+
+    <link rel="icon" href="../teamProject/image/brand-lego.png">
     <link rel="stylesheet" href="venom.css">
     <link rel="stylesheet" href="../css/caregory.css">
     <link rel="stylesheet" href="../css/headers.css">
@@ -14,6 +16,7 @@
 
     <script defer src="../css/scripts.js"></script>
 
+    <link rel="stylesheet" href="../../">
 </head>
 
 <body>
@@ -23,13 +26,14 @@
         <header class="header">
 
             <div class="header_logo">
-                <button id="show2" class="img-button"><img src="../image/lego-icon.svg" alt="legoLogo"></button>
+                <button id="show2" class="img-button"><img src="../headerImg/lego.png" alt="legoLogo"
+                        onclick="location.href='../../index.html'"></button>
             </div>
 
             <div class="header_menu">
                 <button class="shopping_button" id="show">레고 제품 쇼핑</button>
                 <ul>
-                    <li><a href="./aboutUs.html">레고 브랜드 소개</a></li>
+                    <li><a href="../aboutUs.html">레고 브랜드 소개</a></li>
                     <li><a href="#">고객 지원</a></li>
                 </ul>
             </div>
@@ -38,33 +42,37 @@
                 <div class="window">
                     <div class="popup">
 
-                        <h2 id="close" class="section_title"></h2>
+                        <h2 class="section_title"></h2>
 
-                        <!-- <div class="menu_lego">
-                        <a href="#">
-                            <img src="./image/lego-icon.svg" alt="lego">
-                        </a>
-                    </div> -->
+                        <div class="menu_lego">
+                            <a href="#">
+                                <img src="../image/lego-icon.svg" alt="lego">
+                            </a>
+                        </div>
 
                         <div class="menu_list">
                             <ul class="menu_list_1">
                                 <li><button>레고 제품 쇼핑</button></li>
-                                <li><button onclick="location.href='./aboutUs.html';">레고 브랜드 소개</button></li>
+                                <li><button onclick="location.href='../aboutUs.html'">레고 브랜드 소개</button></li>
                                 <li><button>고객 지원</button></li>
                             </ul>
                         </div>
 
-                        <div>
-                            <button class="closeCate">X</button>
+                        <div class="close">
+                            <button class="close_button" id="close">
+                                <img src="../image/close.png" alt="close">
+                            </button>
                         </div>
 
                         <div class="menu_list2">
                             <ul class="menu_list2_1">
                                 <li><button onclick='btnClick()'>시리즈별 세트</button></li>
-                                <li><button>신상품</button></li>
-                                <li><button>베스트 셀러</button></li>
-                                <li><button onclick="btnClick2()">추억의 레고</button></li>
-                                <li><button>할인 및 행사</button></li>
+                                <li><button onclick="location.href='../productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='../productList.html'">베스트 셀러</button>
+                                </li>
+                                <li><button onclick="location.href='../pastSeries.html'">추억의 레고</button></li>
+                                <li><button onclick="location.href='../productList.html'">할인 및 행사</button>
+                                </li>
                             </ul>
                         </div>
 
@@ -72,27 +80,30 @@
                             <ul>
                                 <li id="star_wars">스타워즈™
                                     <div class="starWars">
-                                        <img src="/img/starWars_logo_black_stroke_300w_2.png" alt="starwars">
+                                        <img src="../categoryImg/starWars_logo_black_stroke_300w_2.png"
+                                            alt="starwars">
                                     </div>
                                 </li>
-                                <li id="super_mario">레고 슈퍼 마리오™
+                                <li id="super_mario">레고 슈퍼 마리오
                                     <div class="superMario">
-                                        <img src="/img/SuperMario-logo-pos_300w.png" alt="supermario">
+                                        <img src="../categoryImg/SuperMario-logo-pos_300w.png"
+                                            alt="supermario">
                                     </div>
                                 </li>
                                 <li id="disney_">디즈니
                                     <div class="disNey">
-                                        <img src="/img/disney_logo_pos_300w_2.png" alt="disney">
+                                        <img src="../categoryImg/disney_logo_pos_300w_2.png" alt="disney">
                                     </div>
                                 </li>
                                 <li id="marvel_">마블
                                     <div class="marvel">
-                                        <img src="/img/Marvel2.png" alt="marvel">
+                                        <img src="../categoryImg/Marvel2.png" alt="marvel">
                                     </div>
                                 </li>
                                 <li id="marble_">해리포터™
                                     <div class="harryPotter">
-                                        <img src="/img/harrypotter_logo_gold_divider-600w2_2.png" alt="harry">
+                                        <img src="../categoryImg/harrypotter_logo_gold_divider-600w2_2.png"
+                                            alt="harry">
                                     </div>
                                 </li>
 
@@ -103,20 +114,33 @@
 
                         <div class="catecate">
                             <button id="close" class="closeButton">
-                                <img src="./categoryImg/x-mark.svg" alt="">
+                                <img src="../categoryImg/x-mark.svg" alt="">
                             </button>
                         </div>
+
+                    </div>
+
+                    <div class="legoland">
+                        <img src="../image/bricks.png" alt="legoland">
                     </div>
 
                 </div>
             </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <button type="submit" class="search_button" id="show3">
+                        <img src="../headerImg/search.png" alt="search">
+                    </button>
+                </div>
 
-            <div class="header_search">
-                <button type="submit" class="search_button" id="show3">
-                    <img src="../headerImg/search.png" alt="search">
-                </button>
+                <div class="header_login">
+                    <ul>
+                        <li><a href="#" class="loginClick">로그인</a></li>
+                        <li><a href="#"><img src="../image/shopping.png" alt="shopping"
+                                    onclick="location.href='../marketbox.html'"></a></li>
+                    </ul>
+                </div>
             </div>
-
             <div class="modal_bg" id="modalBg"></div>
 
             <div class="modal_box" id="modalWrap">
@@ -124,8 +148,8 @@
                     <h2>레고 &reg; 계정으로 로그인하기</h2>
                     <input type="text" placeholder="id" class="modal_input">
                     <input type="password" placeholder="password" class="modal_input">
-                    <a href="./mainlogin.html">로그인</a>
-                    <a href="./accountcreate.html">회원가입</a>
+                    <a href="../mainlogin.html">로그인</a>
+                    <a href="../accountcreate.html">회원가입</a>
                     <button class="close_btn" id="closeModalBtn">나가기</button>
                 </div>
             </div>
@@ -134,19 +158,12 @@
                 <div class="window2">
                     <div class="popup2">
 
-                        <button class="closeX">X</button>
                         <input type="text" class="searchBox">
-
+                        <button class="closeX">X</button>
                     </div>
                 </div>
             </div>
 
-            <div class="header_login">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#"><img src="../image/shopping.png" alt="shopping"></a></li>
-                </ul>
-            </div>
 
         </header>
     </div>
@@ -166,11 +183,11 @@
                         <div class="imgBox">
                             <img src="https://www.lego.com/cdn/cs/set/assets/blt48e82eedeaa88cb5/76276.png?format=webply&fit=bounds&quality=60&width=800&height=800&dpr=2"
                                 alt="베놈 맥 로봇 대 마일스 모랄레스 이미지">
-                            <img src="https://www.lego.com/cdn/cs/set/assets/blt38ea8d916a5f7408/76276_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-                                alt="">
+                            <!-- <img src="https://www.lego.com/cdn/cs/set/assets/blt38ea8d916a5f7408/76276_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+                                alt="" class="img2"> -->
                         </div>
 
-                        <div>
+                        <!-- <div>
                             <button class="leftButton">
                                 <img src="../svgImg/Asset 1.svg" alt="">
     
@@ -179,7 +196,7 @@
                             <button class="rightButton">
                                 <img src="../svgImg/Asset 2.svg" alt="">
                             </button>
-                        </div>
+                        </div> -->
                     </div>
 
                     

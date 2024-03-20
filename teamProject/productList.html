@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="icon" href="../teamProject/image/brand-lego.png">
     <link rel="stylesheet" href="./css/productList.css">
     <link rel="stylesheet" href="./css/headers.css">
     <link rel="stylesheet" href="./css/newFooter.css">
@@ -64,10 +66,12 @@
                         <div class="menu_list2">
                             <ul class="menu_list2_1">
                                 <li><button onclick='btnClick()'>시리즈별 세트</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">신상품</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">베스트 셀러</button></li>
+                                <li><button onclick="location.href='./productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='./productList.html'">베스트 셀러</button>
+                                </li>
                                 <li><button onclick="location.href='./pastSeries.html'">추억의 레고</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">할인 및 행사</button></li>
+                                <li><button onclick="location.href='./productList.html'">할인 및 행사</button>
+                                </li>
                             </ul>
                         </div>
 
@@ -75,12 +79,14 @@
                             <ul>
                                 <li id="star_wars">스타워즈™
                                     <div class="starWars">
-                                        <img src="./categoryImg/starWars_logo_black_stroke_300w_2.png" alt="starwars">
+                                        <img src="./categoryImg/starWars_logo_black_stroke_300w_2.png"
+                                            alt="starwars">
                                     </div>
                                 </li>
                                 <li id="super_mario">레고 슈퍼 마리오
                                     <div class="superMario">
-                                        <img src="./categoryImg/SuperMario-logo-pos_300w.png" alt="supermario">
+                                        <img src="./categoryImg/SuperMario-logo-pos_300w.png"
+                                            alt="supermario">
                                     </div>
                                 </li>
                                 <li id="disney_">디즈니
@@ -95,7 +101,8 @@
                                 </li>
                                 <li id="marble_">해리포터™
                                     <div class="harryPotter">
-                                        <img src="./categoryImg/harrypotter_logo_gold_divider-600w2_2.png" alt="harry">
+                                        <img src="./categoryImg/harrypotter_logo_gold_divider-600w2_2.png"
+                                            alt="harry">
                                     </div>
                                 </li>
 
@@ -118,13 +125,21 @@
 
                 </div>
             </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <button type="submit" class="search_button" id="show3">
+                        <img src="./headerImg/search.png" alt="search">
+                    </button>
+                </div>
 
-            <div class="header_search">
-                <button type="submit" class="search_button" id="show3">
-                    <img src="./headerImg/search.png" alt="search">
-                </button>
+                <div class="header_login">
+                    <ul>
+                        <li><a href="#" class="loginClick">로그인</a></li>
+                        <li><a href="#"><img src="./image/shopping.png" alt="shopping"
+                                    onclick="location.href='./marketbox.html'"></a></li>
+                    </ul>
+                </div>
             </div>
-
             <div class="modal_bg" id="modalBg"></div>
 
             <div class="modal_box" id="modalWrap">
@@ -144,18 +159,10 @@
 
                         <input type="text" class="searchBox">
                         <button class="closeX">X</button>
-
                     </div>
                 </div>
             </div>
 
-            <div class="header_login">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#"><img src="./image/shopping.png" alt="shopping"
-                                onclick="location.href='./marketbox.html'"></a></li>
-                </ul>
-            </div>
 
         </header>
     </div>

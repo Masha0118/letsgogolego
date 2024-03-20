@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The LEGO Brand</title>
 
+    <link rel="icon" href="../teamProject/image/brand-lego.png">
     <link rel="stylesheet" href="./css/aboutUs.css">
     <link rel="stylesheet" href="./css/headers.css">
     <link rel="stylesheet" href="./css/newFooter.css">
@@ -64,10 +65,12 @@
                         <div class="menu_list2">
                             <ul class="menu_list2_1">
                                 <li><button onclick='btnClick()'>시리즈별 세트</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">신상품</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">베스트 셀러</button></li>
+                                <li><button onclick="location.href='./productList.html'">신상품</button></li>
+                                <li><button onclick="location.href='./productList.html'">베스트 셀러</button>
+                                </li>
                                 <li><button onclick="location.href='./pastSeries.html'">추억의 레고</button></li>
-                                <li><button onclick="location.href='./teamProject/productList.html'">할인 및 행사</button></li>
+                                <li><button onclick="location.href='./productList.html'">할인 및 행사</button>
+                                </li>
                             </ul>
                         </div>
 
@@ -121,13 +124,21 @@
 
                 </div>
             </div>
+            <div class="header_right">
+                <div class="header_search">
+                    <button type="submit" class="search_button" id="show3">
+                        <img src="./headerImg/search.png" alt="search">
+                    </button>
+                </div>
 
-            <div class="header_search">
-                <button type="submit" class="search_button" id="show3">
-                    <img src="./headerImg/search.png" alt="search">
-                </button>
+                <div class="header_login">
+                    <ul>
+                        <li><a href="#" class="loginClick">로그인</a></li>
+                        <li><a href="#"><img src="./image/shopping.png" alt="shopping"
+                                    onclick="location.href='./marketbox.html'"></a></li>
+                    </ul>
+                </div>
             </div>
-
             <div class="modal_bg" id="modalBg"></div>
 
             <div class="modal_box" id="modalWrap">
@@ -147,18 +158,10 @@
 
                         <input type="text" class="searchBox">
                         <button class="closeX">X</button>
-
                     </div>
                 </div>
             </div>
 
-            <div class="header_login">
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#"><img src="../img/shopping.png" alt="shopping"
-                                onclick="location.href='./marketbox.html'"></a></li>
-                </ul>
-            </div>
 
         </header>
     </div>

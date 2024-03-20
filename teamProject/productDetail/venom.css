@@ -111,19 +111,20 @@
     }
 }
 
+
 /* 메인이미지 */
 .mainImg {
     margin: auto;
 
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.imgBox {
+/* .imgBox {
     display: flex;
     position: relative;
     transition: all ease-in-out .5s;
-}
-
+} */
+/* 
 .leftButton,
 .rightButton {
     width: 40px;
@@ -131,7 +132,7 @@
     top: 60%;
     transform: translateY(-50%);
     opacity: .3;
-}
+} */
 
 .leftButton {
     left: 20%;
@@ -603,6 +604,10 @@
     display: flex;
     justify-content: space-between;
     width: 99%;
+}
+
+.clickMenu:hover {
+    cursor: pointer;
 }
 
 .clickMenu span img {

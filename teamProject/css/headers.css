@@ -11,6 +11,12 @@
     width: 70%;
 }
 
+@media (max-width:768px) {
+    .header {
+        width: 100%;
+    }
+}
+
 .header_logo img {
     /* width: 150px; */
     height: 85px;
@@ -32,6 +38,7 @@
     width: 35px;
     height: 20px;
 }
+
 
 /* 헤더 영역 색상 지정과 영역 크기 지정 */
 .header {
@@ -99,7 +106,13 @@
 .header_search {
     float: right;
     margin-right: 2em;
-    margin-top: -3.65em;
+    margin-top: -0.5em;
+}
+
+@media (max-width:768px) {
+    .header_search {
+        display: none;
+    }
 }
 
 /* 검색 버튼 디자인 */
@@ -116,6 +129,12 @@
     font-size: 1em;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+@media (max-width:768px) {
+    .search_button {
+        margin-right: 7em;
+    }
 }
 
 
@@ -170,9 +189,12 @@
     margin-left: 1em;
 }
 
-.header_login ul li:first-child {
-    margin-left: 0;
+@media (max-width:768px) {
+    .header_login ul li:nth-child(2) {
+        margin-right: 10%;
+    }
 }
+
 
 .header_login ul li a {
     font: bold 14px 'arial';

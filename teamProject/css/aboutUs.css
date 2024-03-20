@@ -37,7 +37,6 @@ main ul li:hover {
 } */
 
 ul li {
-    display: inline-block;
     white-space: pre-line;
 }
 
@@ -49,9 +48,9 @@ ul li {
     font-size: .875rem;
     width: 100%;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
     height: 5rem;
 
@@ -61,6 +60,8 @@ ul li {
 .top_ul li {
     margin-right: 50px;
     height: 5rem;
+    display: inline-block;
+
 }
 
 /* ================================================================================== */
